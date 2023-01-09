@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tagback</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <center>
+        <header>
+            <h1 class="header header1">
+                <span class="header header1__logo">TagBack</span>
+                <span class="header header1__motto">World's Smartest Pet Tag</span>
+            </h1>
+
+            <h2 class="header header2">Edit Tagback</h2>
+        </header>
+    </center>
+
+    <main class="padd">
+        <center class="pet__img">
+            <label class="pet__img--text" for="#pet-photo">Pet's Photo</label>
+            <img id="pet-photo" class="pet__img--pic" src="sj" alt="">
+        </center>
+
+        <form class="form__input" action="#">
+            <div class="form__input--row">
+                <label class="form__input--label" for="#pet-name">pet name:</label>
+                <input id="pet-name" type="text">
+            </div>
+            <div class="form__input--row">
+                <label class="form__input--label" for="#phone">phone:</label>
+                <input id="phone" type="tel">
+                <span>+</span>
+            </div>
+            <div class="form__input--row">
+                <label class="form__input--label" for="#address">address:</label>
+                <input id="address" type="text">
+            </div>
+            <div class="form__input--row">
+                <label class="form__input--label" for="#email">email:</label>
+                <input id="email" type="email">
+                <span>+</span>
+            </div>
+
+            <div class="textarea">
+                <label class="textarea__label" for="#textarea">other info:</label>
+                <textarea id="textarea" type="text"></textarea>
+            </div>
+        </form>
+
+        <div class="conclusion">
+            <p>Receive Tag Scan Notification By:</p>
+
+            <div class="check-btn">
+                <div>
+                    <label for="text">Text</label>
+                    <input class=select type="checkbox">
+                </div>
+                <div>
+                    <label for="text">Email</label>
+                    <input class=select type="checkbox">
+                </div>
+            </div>
+
+            <div class="btns center">
+                <button class="btn">Previous Page</button>
+                <button class="btn">Save Changes</button>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>

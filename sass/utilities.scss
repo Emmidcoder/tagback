@@ -1,0 +1,40 @@
+
+.center{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.container{
+    width: 92%;
+}
+
+.padd{
+    padding: 1rem;
+}
+
+.margin-top{
+    margin-top: 3rem !important;
+}
+
+.margin-tops{
+    margin-top: 1.5rem !important;
+}
+
+
+.margin-topm{
+    margin-top: 5rem !important;
+}
+
+.col{
+    grid-template-columns: 65% !important;
+    grid-template-rows:repeat(2, max-content) !important;
+    justify-content: center;
+    justify-items: center;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 1rem;
+}

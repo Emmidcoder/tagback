@@ -1,0 +1,18 @@
+.btns {
+    display: flex;
+    gap: 2rem;
+    width: max-content;
+    height: 100%;
+    margin-top: 2rem;
+
+}
+
+.btn {
+    display: block;
+    font-family: karma, sans-serif;;
+    background-color: #ea34f0;
+    color: #fff;
+    border: none;
+    width: 10rem;
+    height: 3rem;
+}
