@@ -11,60 +11,100 @@
 </head>
 
 <body>
-    <center>
-        <header>
-            <h1 class="header header1">
-                <span class="header header1__logo">TagBack</span>
-                <span class="header header1__motto">World's Smartest Pet Tag</span>
+    <header class="head">
+        <div>
+            <h1 class="heading heading1">
+                <span class="heading heading1__logo">TagBack</span>
+                <span class="heading heading1__motto">World's Smartest Pet Tag</span>
             </h1>
-
-        </header>
-    </center>
+        </div>
+        <div class="desktop">
+            <div class="free-shipping">
+                <h2 class="heading heading2 free-shipping__text head ">$1 + Free Shipping</h2>
+                <p>for the tag and then $1/mo for pet profile + 24/7 GPS protection</p>
+            </div>
+        </div>
+    </header>
 
     <main>
-        <div class="scan-img">
-            <img src="/img/scan-img.jpg" alt="">
+        <h3 class="heading heading3 desktop nav-links">
+            <a href="">Activate</a> | <a href="">Buy Now</a> | <a href="">FAQ</a> | <a href="">Contact</a>
+        </h3>
+
+        <div class="header-video">
+            <video class="desktop" preload="auto" loop muted autoplay playsinline>
+                <source class="video" src="/img/tagback-header-img.mp4" type="video/mp4">
+            </video>
+
+            <video class="mobile" preload="auto" loop muted autoplay playsinline>
+                <source class="video" src="/img/tagback-header-img.moblie.mp4" type="video/mp4">
+            </video>
         </div>
 
-        <div class="container center">
-            <h2 class="header header2">$1 + Free Shipping</h2>
-            <p>for the tag and then $1/mo for pet profile + 24/7 GPS protection</p>
-            <button class="btn center margin-tops">Save Changes</button>
-            <p class="margin-tops">GPS Notificatons + Free Tags For LIfe + More</p>
+        <div class="flex flex-col width center">
+            <div class="free-shipping">
+                <h2 class="heading heading2 free-shipping__text">$1 + Free Shipping</h2>
+                <p>for the tag and then $1/mo for pet profile + 24/7 GPS protection</p>
+            </div>
 
-            <h3 class="header" >What makes TagBack so smart</h3>
-
-            <div class="tagback-video center margin-tops"></div>
-
-            <p class="margin-tops">TagBack Pet ID Tags replave the old school ID tags of the past with a QR code that is parmaanently
-                engraved
-                and protected. That means if your pet ever goes missing, you will receive an instant notificaton of
-                thier
-                location when someone finds them and scans the tag.
-            </p>
-
-            <p class="margin-tops">Every TagBack pet receives thier own profile that shows up when someone scans the tag with thier phone.
-                This
-                means you can add unlimited emergency contacts, update the information even after they are lost, and
-                special
-                medical or health alerts, and more.
-            </p>
-
-            <p class="margin-tops">Best of all, the tags are hassle free. They don't need batteries or charging and no need to download an
-                app.
-                They just work! Plus, we will send you a free replacement tag if yours is ever lost, damaged, or stolen!
-            </p>
-
-            <h3 class="header margin-tops">Overview!</h3>
-            
-            <p>FREE replacements for life if lost, damaged, or stolen </p>
-            <p>GPS locatio notificatons when tag is scanned</p>
-            <p>Unlimited emergency contacts</p>
-            <p>Can be updated even after your is missing</p>
-            <p>No batteries or charging</p>
-            <p>No app needed</p>
-            <p>Always getting better</p>
+            <span><button class="btn">Buy Now</button></span>
         </div>
+
+        <div class="flex flex-col width-b center margin-topm">
+            <div class="desktop tag-front-and-back">
+                <img src="/img/tag-front-and-back.png" alt="tag-front-and-back-image">
+            </div>
+            <div>
+                <h3 class="heading">What makes TagBack so smart</h3>
+                <div class="tagback-video center margin-tops">
+                    <video src="#"></video>
+                </div>
+            </div>
+        </div>
+
+        <button class="btn center margin-topm desktop">Buy Now</button>
+
+        <div class="grid center">
+            <div class="margin-topm">
+                <h3 class="heading">How is TagBack different</h3>
+                <p class="margin-top">TagBack Pet ID Tags replave the old school ID tags of the past with a QR code
+                    that is
+                    parmaanently
+                    engraved
+                    and protected. That means if your pet ever goes missing, you will receive an instant notificaton of
+                    thier
+                    location when someone finds them and scans the tag.
+                </p>
+
+                <p class="margin-top">Every TagBack pet receives thier own profile that shows up when someone scans the
+                    tag
+                    with thier phone.
+                    This
+                    means you can add unlimited emergency contacts, update the information even after they are lost, and
+                    special
+                    medical or health alerts, and more.
+                </p>
+
+                <p class="margin-top">Best of all, the tags are hassle free. They don't need batteries or charging and
+                    no
+                    need to download an
+                    app.
+                    They just work! Plus, we will send you a free replacement tag if yours is ever lost, damaged, or
+                    stolen!
+                </p>
+            </div>
+
+            <ul class="center margin-topm">
+                <li><span>GPS locatio notificatons when tag is scanned</span></li>
+                <li class="margin-top"><span>No batteries or charging</span></li>
+                <li class="margin-top"><span>No app needed</span></li>
+                <li class="margin-top"><span>Can be updated even after your is missing</span></li>
+                <li class="margin-top"><span>Unlimited emergency contacts</span></li>
+                <li class="margin-top"><span>FREE replacements for life if lost, damaged, or stolen</span></li>
+            </ul>
+        </div>
+        <button class="btn center margin-topm desktop">Buy Now</button>
     </main>
 </body>
+
 </html>

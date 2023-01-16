@@ -11,68 +11,86 @@
 </head>
 
 <body>
-    <center>
-        <header>
-            <h1 class="header header1">
-                <span class="header header1__logo">TagBack</span>
-                <span class="header header1__motto">World's Smartest Pet Tag</span>
+    <header class="head">
+        <div>
+            <h1 class="heading heading1">
+                <span class="heading heading1__logo">TagBack</span>
+                <span class="heading heading1__motto">World's Smartest Pet Tag</span>
             </h1>
+        </div>
 
-            <h2 class="header header2">Edit Tagback</h2>
-        </header>
-    </center>
+        <div class="desktop free-shipping">
+            <h2 class="heading heading2 free-shipping__text">$1 + Free Shipping</h2>
+            <p>for the tag and then $1/mo for pet profile + 24/7 GPS protection</p>
+        </div>
+    </header>
 
-    <main class="padd">
-        <center class="pet__img">
-            <label class="pet__img--text" for="#pet-photo">Pet's Photo</label>
-            <img id="pet-photo" class="pet__img--pic" src="sj" alt="">
-        </center>
+    <main>
+        <h3 class="heading heading3 nav-links desktop">
+            <a href="">Activate</a> | <a href="">Buy Now</a> | <a href="">FAQ</a> | <a href="">Contact</a>
+        </h3>
+        <div class="demarcation desktop">
+            <img class="desktop" src="/img/demarcation.jpg" alt="demarcation img">
+        </div>
 
-        <form class="form__input" action="#">
-            <div class="form__input--row">
-                <label class="form__input--label" for="#pet-name">pet name:</label>
-                <input id="pet-name" type="text">
+        <h2 class="heading heading2 center margin-topm">Edit Tag</h2>
+
+        <div class="sect1 center margin-topm">
+            <div class="pet__img">
+                <label class="pet__img--text" for="#pet-photo">Pet's Photo</label>
+                <img id="pet-photo" class="pet__img--pic" src="sj" alt="">
             </div>
-            <div class="form__input--row">
-                <label class="form__input--label" for="#phone">phone:</label>
-                <input id="phone" type="tel">
-                <span>+</span>
-            </div>
-            <div class="form__input--row">
-                <label class="form__input--label" for="#address">address:</label>
-                <input id="address" type="text">
-            </div>
-            <div class="form__input--row">
-                <label class="form__input--label" for="#email">email:</label>
-                <input id="email" type="email">
-                <span>+</span>
+
+            <form class="form__input" action="#">
+                <div class="form__input--row">
+                    <label class="form__input--label" for="#pet-name">PET NAME:</label>
+                    <input id="pet-name" type="text">
+                </div>
+                <div class="form__input--row">
+                    <label class="form__input--label" for="#phone">PHONE:</label>
+                    <input id="phone" type="tel">
+                    <span>+</span>
+                </div>
+                <div class="form__input--row">
+                    <label class="form__input--label" for="#address">ADDRESS:</label>
+                    <input id="address" type="text">
+                </div>
+                <div class="form__input--row">
+                    <label class="form__input--label" for="#email">EMAIL:</label>
+                    <input id="email" type="email">
+                    <span>+</span>
+                </div>
+            </form>
+        </div>
+
+
+
+        <div class="sect2 center margin-topm">
+            <div class="notifications">
+                <p>Receive Tag Scan Notification By:</p>
+                <div class="check-btn margin-tops">
+                    <span>
+                        <label for="text">Text</label>
+                        <input class=select type="checkbox">
+                    </span>
+                    <span>
+                        <label for="text">Email</label>
+                        <input class=select type="checkbox">
+                    </span>
+                </div>
             </div>
 
             <div class="textarea">
                 <label class="textarea__label" for="#textarea">other info:</label>
                 <textarea id="textarea" type="text"></textarea>
             </div>
-        </form>
-
-        <div class="conclusion">
-            <p>Receive Tag Scan Notification By:</p>
-
-            <div class="check-btn">
-                <div>
-                    <label for="text">Text</label>
-                    <input class=select type="checkbox">
-                </div>
-                <div>
-                    <label for="text">Email</label>
-                    <input class=select type="checkbox">
-                </div>
-            </div>
-
-            <div class="btns center">
-                <button class="btn">Previous Page</button>
-                <button class="btn">Save Changes</button>
-            </div>
         </div>
+
+        <div class="btns center margin-topm">
+            <button class="btn">Previous Page</button>
+            <button class="btn">Save Changes</button>
+        </div>
+
     </main>
 
 </body>

@@ -1,45 +1,50 @@
 .form__input {
     font-size: 2.5rem;
-    margin-top: 1.5rem;
     font-family: sans-serif;
-
+    width: 100%;
 
     &--row {
         display: grid;
-        grid-template-columns: 11rem 1fr 1rem;
+        grid-template-columns: 25rem 1fr 1rem;
         margin-top: .5rem;
+
+        @media only screen and (max-width: 600px) {
+            grid-template-columns: 10.4rem 1fr 1rem;
+        }
     }
 
     label {
-        width: max-content;
-        font-weight: 600;
+        font-weight: 700;
         font-size: 1.7rem;
-        text-transform: uppercase;
+        text-align: end;
+        margin-right: 1rem;
     }
 
     &--label {
         margin-right: 1rem;
-        justify-self: end;
     }
 
     input {
         font-size: 2rem;
         margin-right: 1rem;
-        width: 100%;
         height: 4rem;
         border: none;
     }
+}
 
-    .textarea {
-        margin-top: 2rem;
-        display: flex;
-        flex-direction: column;
+.textarea {
+    text-transform: uppercase;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+        font-weight: 700;
 
-        textarea {
-            width: 95%;
-            height: 18rem;
-            margin: 0 auto;
-            resize: none;
-        }
+    textarea {
+        width: 100%;
+        height: 18rem;
+        margin: 0 auto;
+        resize: none;
+        border: none;
     }
 }

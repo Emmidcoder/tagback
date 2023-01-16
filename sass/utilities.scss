@@ -1,40 +1,105 @@
-
-.center{
-    margin: 0 auto;
+.center {
+    margin: 0 auto !important;
     text-align: center;
 }
 
-.container{
+.width {
+    max-width: 55rem !important;
+    width: 97% !important;
+}
+
+.width-b {
+    max-width: 70rem !important;
+    width: 97% !important;
+}
+
+.container {
     width: 92%;
 }
 
-.padd{
+.padd-side {
     padding: 1rem;
 }
 
-.margin-top{
+.margin-top {
     margin-top: 3rem !important;
 }
 
-.margin-tops{
+.margin-tops {
     margin-top: 1.5rem !important;
 }
 
 
-.margin-topm{
+.margin-topm {
     margin-top: 5rem !important;
+
+    @media only screen and (max-width: 600px) {
+        margin-top: 3rem !important;
+    }
 }
 
-.col{
-    grid-template-columns: 65% !important;
-    grid-template-rows:repeat(2, max-content) !important;
-    justify-content: center;
-    justify-items: center;
+.margin-topb {
+    margin-top: 10rem !important;
 }
 
-.flex{
+.col {
+    @media only screen and (max-width: 600px) {
+        grid-template-columns: 65% !important;
+        grid-template-rows: repeat(2, max-content) !important;
+        justify-content: center;
+        justify-items: center;
+        row-gap: .5rem;
+    }
+}
+
+.flex {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-right: 1rem;
+}
+
+.flex-col {
+    @media only screen and (max-width: 600px) {
+        flex-direction: column;
+        gap: 3rem;
+    }
+}
+
+.flex-colrv {
+    @media only screen and (max-width: 600px) {
+        flex-direction: column-reverse;
+        gap: 3rem;
+    }
+}
+
+.grid {
+    max-width: 80rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+    align-items: center;
+    row-gap: 3rem;
+
+    ul {
+        @media only screen and (max-width: 700px) {
+            margin-top: 3rem;
+            grid-row: 1 / 2;
+            grid-column: 1 / 2;
+        }
+    }
+}
+
+.desktop {
+    @media only screen and (max-width: 600px) {
+        visibility: hidden;
+        height: 0 !important;
+        margin: 0 !important;
+    }
+}
+
+.mobile {
+    @media only screen and (min-width: 600px) {
+        visibility: hidden;
+        height: 0 !important;
+        margin: 0 !important;
+    }
 }
