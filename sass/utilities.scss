@@ -13,6 +13,11 @@
     width: 97% !important;
 }
 
+.width-bb {
+    max-width: 120rem !important;
+    width: 97% !important;
+}
+
 .container {
     width: 92%;
 }
@@ -42,15 +47,10 @@
     margin-top: 10rem !important;
 }
 
-.col {
-    @media only screen and (max-width: 600px) {
-        grid-template-columns: 65% !important;
-        grid-template-rows: repeat(2, max-content) !important;
-        justify-content: center;
-        justify-items: center;
-        row-gap: .5rem;
-    }
+.row-l {
+    grid-template-columns: 25rem minmax(10rem, 1fr) !important;
 }
+
 
 .flex {
     display: flex;
@@ -58,25 +58,14 @@
     align-items: center;
 }
 
-.flex-col {
-    @media only screen and (max-width: 600px) {
-        flex-direction: column;
-        gap: 3rem;
-    }
-}
-
-.flex-colrv {
-    @media only screen and (max-width: 600px) {
-        flex-direction: column-reverse;
-        gap: 3rem;
-    }
-}
-
 .grid {
     max-width: 80rem;
+    padding: 1rem;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
     align-items: center;
+    justify-content: center;
+    justify-items: center;
     row-gap: 3rem;
 
     ul {
@@ -86,20 +75,47 @@
             grid-column: 1 / 2;
         }
     }
-}
 
-.desktop {
-    @media only screen and (max-width: 600px) {
-        visibility: hidden;
-        height: 0 !important;
-        margin: 0 !important;
-    }
-}
-
-.mobile {
     @media only screen and (min-width: 600px) {
+        .right {
+            grid-column: 2 / 3;
+            grid-row: 1 / 2;
+        }
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .mobile {
         visibility: hidden;
         height: 0 !important;
         margin: 0 !important;
     }
 }
+
+@media only screen and (max-width: 600px) {
+    .col {
+        grid-template-columns: 65% !important;
+        grid-template-rows: repeat(2, max-content) !important;
+        justify-content: center;
+        justify-items: center;
+        row-gap: .5rem;
+    }
+
+    .flex-colrv {
+        flex-direction: column-reverse;
+        gap: 3rem;
+    }
+
+    .flex-col {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .desktop {
+        visibility: hidden;
+        height: 0 !important;
+        margin: 0 !important;
+    }
+}
+
+
